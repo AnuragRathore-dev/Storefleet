@@ -11,7 +11,6 @@ export const auth = async (req, res, next) => {
   req.user = await UserModel.findById(decodedData.id);
   next();
 };
-
 export const authByUserRole = (...roles) => {
   // fix this middleware for admin access only
   return async (req, res, next) => {
