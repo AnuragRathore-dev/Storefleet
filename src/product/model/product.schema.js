@@ -1,6 +1,5 @@
 import { timeStamp } from "console";
 import mongoose from "mongoose";
-
 const producSchema = new mongoose.Schema(
   {
     name: {
