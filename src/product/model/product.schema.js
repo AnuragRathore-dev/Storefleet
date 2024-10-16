@@ -68,7 +68,7 @@ const producSchema = new mongoose.Schema(
       required: [true, "product stock is mandatory"],
       maxLength: [5, "stock can be maximum 5 digits"],
       default: 1,
-    },
+    }, 
     reviews: [
       {
         user: {
