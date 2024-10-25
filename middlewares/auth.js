@@ -1,7 +1,6 @@
 import jwt from "jsonwebtoken";
 import { ErrorHandler } from "../utils/errorHandler.js";
 import UserModel from "../src/user/models/user.schema.js";
-
 export const auth = async (req, res, next) => {
   const { token } = req.cookies;
   if (!token) {
