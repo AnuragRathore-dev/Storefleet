@@ -3,7 +3,7 @@ import ProductModel from "./product.schema.js";
 export const addNewProductRepo = async (product) => {
   return await new ProductModel(product).save();
 };
-
+ 
 export const getAllProductsRepo = async (query, skip, pageSize) => {
   return await ProductModel.find(query).skip(skip).limit(pageSize);
 };
