@@ -1,4 +1,4 @@
-import { ErrorHandler } from "../utils/errorHandler.js";
+ import { ErrorHandler } from "../utils/errorHandler.js";
 
 export const errorHandlerMiddleware = (err, req, res, next) => {
   err.message = err.message || "Internal server error";
